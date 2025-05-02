@@ -26,7 +26,7 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/leetcode-exercises.git
+   git clone https://github.com/illuminatus503/LeetCode-Exercises.git
    cd leetcode-exercises
    ```
 
@@ -54,6 +54,7 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
   pytest tests/easy
   ```
 
+<!-- 
 ## Contributing
 
 1. Fork the repository.
@@ -68,6 +69,7 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
    git push origin feature/your-feature
 6. Open a pull request describing your contribution.
 
+-->
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
