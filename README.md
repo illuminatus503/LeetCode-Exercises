@@ -18,9 +18,11 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
 - **`tests/`**
   - `easy/` — unit tests for Easy solutions
   - `medium/` — unit tests for Medium solutions
-- **`README.md` — this file
-- **`requirements.txt`** — project dependencies (e.g. `pytest`)
+  - `hard/` — unit tests for Hard solutions
+- **`CHANGELOG.md`** — a record of changes
 - **`LICENSE`** — project license (MIT)
+- **`README.md`** — this file
+- **`requirements.txt`** — project dependencies (e.g. `pytest`)
 
 ## Installation
 
