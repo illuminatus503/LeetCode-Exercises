@@ -1,0 +1,10 @@
+# Requirements for Python 3.12+ (tested on latest Python)
+
+pytest>=7.4.2         # test framework
+pytest-cov>=4.1.0     # coverage measurement
+black>=24.1.0         # code formatter
+isort>=6.1.0          # import sorter
+flake8>=6.1.0         # linting
+mypy>=1.5.1           # static type checking
+pre-commit>=3.4.0     # run linters/formatters on commit
+hypothesis>=7.0.0     # generate tests based on properties

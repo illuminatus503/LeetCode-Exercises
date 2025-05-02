@@ -1,0 +1,41 @@
+# This configuration runs formatting, linting, and type checks on commit.
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace           # remove trailing whitespace
+      - id: end-of-file-fixer             # ensure newline at end of file
+      - id: check-yaml                    # validate YAML files
+      - id: check-added-large-files       # prevent adding large files
+
+  - repo: https://github.com/psf/black
+    rev: 24.1.0
+    hooks:
+      - id: black                         # code formatter
+        name: black (python)
+        language_version: python3.12
+        args: [--line-length=88]
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 6.1.0
+    hooks:
+      - id: isort                         # import sorter
+        name: isort (python)
+        language_version: python3.12
+        args: [--profile=black]
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8                        # linter
+        name: flake8 (python)
+        language_version: python3.12
+        args: [--max-line-length=88, --extend-ignore=E203,W503]
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.5.1
+    hooks:
+      - id: mypy                          # static type checker
+        name: mypy (python)
+        language_version: python3.12
+        args: [--strict]

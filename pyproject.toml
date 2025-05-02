@@ -1,0 +1,38 @@
+[project]
+name = "leetcode-exercises"
+version = "0.1.0"
+description = "Solutions to LeetCode problems in Python"
+authors = [ { name = "Your Name", email = "you@example.com" } ]
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+dependencies = []
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+include = '''\.pyi?$'''
+exclude = '''(\.venv|build|dist)'''
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+exclude = [".venv", "build", "dist", "__pycache__"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+exclude = "build|dist"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--strict-markers --cov=src"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
