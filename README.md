@@ -56,7 +56,7 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
   pytest tests/easy
   ```
 
-<!-- 
+<!--
 ## Contributing
 
 1. Fork the repository.
