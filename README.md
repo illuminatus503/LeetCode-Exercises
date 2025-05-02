@@ -1,5 +1,8 @@
 # LeetCode Exercises in Python
 
+[![CI](https://github.com/illuminatus503/LeetCode-Exercises/actions/workflows/ci.yml/badge.svg)](https://github.com/illuminatus503/LeetCode-Exercises/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/illuminatus503/LeetCode-Exercises/branch/main/graph/badge.svg)](https://codecov.io/gh/illuminatus503/LeetCode-Exercises)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Description
