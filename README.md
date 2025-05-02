@@ -11,20 +11,20 @@ This repository contains my solutions to LeetCode problems implemented in **Pyth
 
 ## Repository Structure
 
-- **`src/`**  
-  - `easy/` — solutions to “Easy” problems  
-  - `medium/` — solutions to “Medium” problems  
-  - `hard/` — solutions to “Hard” problems  
-- **`tests/`**  
-  - `easy/` — unit tests for Easy solutions  
-  - `medium/` — unit tests for Medium solutions  
+- **`src/`**
+  - `easy/` — solutions to “Easy” problems
+  - `medium/` — solutions to “Medium” problems
+  - `hard/` — solutions to “Hard” problems
+- **`tests/`**
+  - `easy/` — unit tests for Easy solutions
+  - `medium/` — unit tests for Medium solutions
 - **`README.md` — this file
-- **`requirements.txt`** — project dependencies (e.g. `pytest`)  
+- **`requirements.txt`** — project dependencies (e.g. `pytest`)
 - **`LICENSE`** — project license (MIT)
 
 ## Installation
 
-1. Clone the repository:  
+1. Clone the repository:
    ```bash
    git clone https://github.com/<your-username>/leetcode-exercises.git
    cd leetcode-exercises
