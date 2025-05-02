@@ -1,6 +1,9 @@
-import pytest
 from typing import List
+
+import pytest
+
 from src.hard.median_two_sorted_arrays import Solution
+
 
 @pytest.mark.parametrize(
     "nums1, nums2, expected",
@@ -23,8 +26,10 @@ from src.hard.median_two_sorted_arrays import Solution
         # Uneven split
         ([1, 4, 7, 8], [2, 3], 3.5),
         ([1, 2], [3, 4, 5, 6, 7], 4.0),
-    ]
-)
-def test_find_median_sorted_arrays(nums1: List[int], nums2: List[int], expected: float) -> None:
+    ],
+)  # type: ignore[misc]
+def test_find_median_sorted_arrays(
+    nums1: List[int], nums2: List[int], expected: float
+) -> None:
     result: float = Solution().find_median_sorted_arrays(nums1, nums2)
     assert pytest.approx(result, rel=1e-9) == expected
