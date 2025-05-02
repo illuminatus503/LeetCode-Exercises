@@ -69,5 +69,7 @@ class Solution:
             else:
                 low = i + 1
 
-        # If inputs are invalid, return infinity
-        return float("inf")
+        # If inputs are invalid, return infinity. This case is not reachable in this
+        # setup
+
+        return float("inf")  # pragma: no cover
