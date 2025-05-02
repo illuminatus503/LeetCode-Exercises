@@ -1,5 +1,5 @@
 """Longest Substring Without Repeating Characters
-Given a string s, find the length of the longest substring without duplicate 
+Given a string s, find the length of the longest substring without duplicate
 characters.
 
 ----
@@ -18,9 +18,9 @@ Example 3:
 Input: s = "pwwkew"
 Output: 3
 Explanation: The answer is "wke", with the length of 3.
-Notice that the answer must be a substring, "pwke" is a subsequence and not a 
+Notice that the answer must be a substring, "pwke" is a subsequence and not a
 substring.
- 
+
 ----
 
 Constraints:
@@ -31,9 +31,10 @@ s consists of English letters, digits, symbols and spaces.
 
 from typing import Dict
 
+
 class Solution:
     def length_of_longest_substring(self, s: str) -> int:
-        char_map: Dict = {}
+        char_map: Dict[str, int] = {}
 
         # Use a sliding window to calculate the max. length
         # substring in the string.
@@ -41,15 +42,14 @@ class Solution:
         max_length: int = 0
 
         for j in range(0, len(s)):
-            # If the character already exists in the map (that is, is inside the 
+            # If the character already exists in the map (that is, is inside the
             # prev. window), move the window forward.
             if s[j] in char_map and char_map[s[j]] >= i:
                 i = char_map[s[j]] + 1
 
-            # Otherwise, simply update the last appearance of s[j] and the length 
+            # Otherwise, simply update the last appearance of s[j] and the length
             # of the window
             char_map[s[j]] = j
             max_length = max(max_length, j - i + 1)
 
         return max_length
-        
