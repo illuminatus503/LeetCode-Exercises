@@ -16,7 +16,7 @@ from src.easy.two_sum import Solution
     ([2, -1, 1, -2], 0, [1, 2]),          # mixing signs
     ([1, 2], 3, [0, 1]),                  # minimal size
     ([1, 1], 2, [0, 1]),                  # two same minimal elements
-])
+])  # type: ignore[misc]
 def test_two_sum_various(nums: list[int], target: int, expected: list[int]) -> None:
     solution: Solution = Solution()
     result: list[int] = solution.twoSum(nums, target)  # type: ignore[assignment]
